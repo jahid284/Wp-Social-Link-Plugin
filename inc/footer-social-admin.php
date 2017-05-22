@@ -31,6 +31,8 @@ function footer_social_options_callback(){
   echo 'Customizing Header';
   }
   function fsl_facebook_handler(){
-
+    $facebook = esc_attr(get_option('facebook_handler'));
+    echo '<input type="text" name="facebook_handler" value="'.$facebook.'" placeholder="Facebook handler" />';
+    echo '<input type="checkbox" />';
   }
 ?>
